@@ -17,7 +17,7 @@ import os
 
 import dj_database_url
 
-if os.path.isfile("env.py"):
+if os.path.isfile('env.py'):
     import env
 
 
@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
