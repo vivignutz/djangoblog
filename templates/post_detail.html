@@ -1,5 +1,4 @@
 {% extends 'base.html' %} {% block content %}
-
 {% load crispy_form_tags %}
 
 <div class="masthead">
@@ -81,11 +80,11 @@
                 <!-- For later -->
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
-                    Your comment is waiting approval
+                    Your comment is awaiting approval
                 </div>
                 {% else %}
-
                 {% if user "is_authenticated" %}
+
                 <h3>Leave a comment:</h3>
                 <p>Posting as: {{ user.username }}</p>
                 <form method="post" style="margin-top: 1.3em;">
